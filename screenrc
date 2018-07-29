@@ -1,0 +1,16 @@
+# From @gbluma/.screenrc
+# https://gist.github.com/gbluma/1323442
+
+startup_message off
+
+# Colors
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' # AB = background, AF = foreground
+defbce "on" # Erase background color with current bg color
+term screen-256color
+
+# Show status bar
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+# Hide text from closed editors
+altscreen on
